@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        El caracol sube 7 pies cada día y retrocede 2 pies cada noche.
+        ¿cuantos dias le tomará al caracol salir de un pozo con la profundidad dada?
+
+        Ejemplo de entrada: 31
+        Ejemplo de salida: 7
+
+    -->
+    <script>
+        let altura = 31;
+        let dias = 0;
+        let sube = 0;
+        for (i = 0; i = altura; i++) {
+            //Dia sube 1 en 1 contando los dias que llega a la altura
+            dias++;
+            sube += 7;
+            if (altura<=sube) {
+                break;
+            } else {
+                sube -= 2
+            }
+        }
+        console.log(dias)
+    </script>
+</body>
+
+</html>
